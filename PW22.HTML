@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Hello world</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="responsividade.css">
+</head>
+
+
+<body>
+	<style type="text/css">
+		#fotoheader{
+			position: absolute;
+			z-index: 45;
+			width: 100vw;
+			height: 97vh;
+			display: block;
+		}
+
+
+		#headertxt{
+			
+			margin-top: 60%;
+			color: white;
+			position: absolute;
+			z-index: 99;
+			font-size: 50px;
+			padding: 20px;
+			width: 13em;
+
+		}
+
+
+		#horario, #professores,#cardapio, #rematricula, footer, #contato{
+			position: absolute;
+			z-index: 99;
+		}
+
+
+		#textohr{
+			margin-left: 30%;
+		}
+		h4{ 
+		text-align: justify;
+		word-spacing: 4px; 
+		padding: 10px;
+		font-size: 20px;
+	 	}
+		h1{
+			text-align: center;
+			padding: 10px; 
+		}
+		
+		td{
+			font-size: 90%;
+			font-style: italic;
+			text-align: center;
+
+		}
+
+		caption{
+			color:darkblue;
+			font-size: 20px;
+		}
+
+		h4{ 
+			margin: auto; 
+			color: darkblue;
+
+		 }
+
+		 li{
+
+			list-style: square;
+		 }
+
+		 p.a{
+		 	text-align: justify;
+		 }
+
+
+		 td.a{
+
+		 	background:rgb(187, 255, 153);
+		 }
+		 td.b{
+		 	
+		 	background: yellow;
+		 }
+		 td.c{
+		 	background:rgb(255, 128, 255);
+		 }
+		 td.d{
+		 	background: rgb(102, 255, 255);
+		 }
+		 td.e{
+		 	background: orange;
+		 }
+		 td.f{
+		 	background: red;
+		 }
+		 td.g{
+		 	background: rgb(0, 204, 102);
+		 }
+		 td.h{
+		 	background: rgb(0, 179, 179);
+
+		 }
+		 td.i{
+		 	background: rgb(51, 133, 255);
+		 }
+		 td.j{
+		 	background: rgb(120, 255, 31);
+		 }
+		 td.k{
+		 	background: rgb(230, 115, 0);
+		 }
+		 td.l{
+		 	background: rgb(255, 0, 170);
+		 }
+		 td.m{
+		 	background: rgb(255, 112, 77);
+		 }
+		 td.n{
+		 	background: rgb(204, 102, 255);
+		 }
+		 td.o{
+		 	background: rgb(217, 179, 255);
+		 }
+		 td.p{
+		 	background: rgb(179, 179, 0);
+		 }
+		 td.z{
+		 	color:black;
+		 }
+		 tr.z{
+		 	background: gray;
+
+		 }
+		 img{
+		 	border-top: 10px;
+		 }
+		 div{
+		 	border:3px;
+		 }
+		 div.a{
+		 	margin-left: auto;
+		 	margin-right: auto;
+
+
+		 }
+		 table {
+                border-collapse: collapse;
+                border:3px;
+                color: black;
+                width: 75%;
+                align-self: center;        
+		}
+
+        td{
+            font-size: 90%;
+            font-style: italic;
+            text-align: center;
+
+        }
+
+        caption{
+            color:darkblue;
+            font-size: 20px;
+        }
+         td.andrey{
+
+             background:rgb(187, 255, 153);
+         }
+         td.bia{
+
+             background: yellow;
+         }
+         td.cris{
+             background:rgb(255, 128, 255);
+         }
+         td.daniel{
+             background: rgb(102, 255, 255);
+         }
+         td.eliana{
+             background: orange;
+         }
+          td.lele{
+             background: gray;
+		 }
+		 /*Contato*/
+		#contato{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding: 20px;
+		}
+		#contato h2{
+			color: #000000;
+		}
+
+		 /*Footer */
+		 footer{
+			 text-align: center;
+			 padding: 10px;
+			 color: #FFFFFF;
+			 background-color: #191970;
+			 margin-top: 37%;
+		 }
+		 footer a{
+			 text-decoration: none;
+			 color: #00FFFF;
+		 }
+		 #btncontact{	
+			background-color: #191970;
+			outline-color: #191970;
+		 }
+
+
+
+		 /*Mobile Config @MediaQuery*/
+
+		 @media screen and (min-width: 768px){
+			 /*topo*/
+			.row{
+				justify-content: space-around;
+			}
+			#fotoheader{
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				height: 97vh;
+				flex-direction: row;
+				flex-wrap: wrap;
+				
+			}
+
+			#headertxt{
+			
+			margin-top: 60%;
+			color: white;
+			position: absolute;
+			z-index: 99;
+			font-size: 50px;
+			padding: 20px;
+			width: 9em;
+
+		}
+			}			
+
+	</style>
+
+
+<div class="containerfluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<img src="img/header.jpg" id="fotoheader">
+
+					<div class="row">
+					<div class="col-sm-2 offset-sm-1">
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop" id="horario">
+  HORÁRIO
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">HORÁRIO DAS AULAS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<!-- mais 7 hrs... -->
+        <table>
+        	<h1><center>Desenvolvimento de Sistemas</center></h1>
+<table>
+		<h3 id="textohr">Horários do 1 D.S</h3>
+	<tr>
+		
+
+	</tr>
+	<table border="1">
+	<tr>
+		<td></td>
+		 <td colspan="2">Segunda</td><td colspan="2">Terça</td><td colspan="2">Quarta</td><td colspan="2">Quinta</td><td colspan="2">Sexta</td> 
+
+
+		
+	</tr>
+	<tr>
+		<td>8:00 às 8:50</td> <td>Artes</td> <td class="a">Simone </td>  	<td>Português</td> <td class="b">Fidélis </td> 	<td >Geografia</td> <td class="c">Henrique </td>  <td>Filosofia</td> <td class="d">Ester</td>  <td>Ed.Física</td> <td class="e"> Thiago </td> 
+	</tr>
+	<tr>
+		<td> 8:50 às 9:40</td>  <td> Artes </td> <td class="a"> Simone</td> 	 <td> Português</td> <td class="b"> Fidélis</td> <td> Geografia </td> <td class="c"> Henrique</td> <td> Filosofia </td> <td class="d"> Ester</td> <td> Ed. Física </td> <td class="e"> Thiago</td>
+		 
+
+	</tr>
+	<tr class="z">
+		<td colspan="11"> Intervalo</td>
+	</tr>
+	<tr>
+		<td>10:00 às 10:50 </td> <td> Artes</td> <td class="a"> Simone</td> <td> A.P.S</td> <td class="f"> Elis/Jussimar</td> <td > Física</td> <td class="g"> Luiz</td> <td> Fundamentos</td> <td class="h"> Wellington</td> <td> Matemática</td> <td class="g"> Luiz</td> 
+				
+		
+			
+	<tr>
+		<td>10:50 às 11:40 </td> <td>BD</td> <td class="p"> Elis/Claudio</td>  <td>A.P.S</td> <td class="f"> Elis/Jussimar</td>  <td>PW-1</td> <td class="l"> Claudio/Rodolfo</td>  <td>Fundamentos</td> <td class="h"> Wellington</td>   <td>T.P.A</td> <td class="i"> Oswaldo/Claudio</td>
+		
+	</tr>
+	<tr>
+		<td> 11:40 às 12:30</td> <td>BD</td> <td class="p">Elis/Claudio</td> <td>Matemática</td> <td class="g">Luiz</td> <td>PW-1</td> <td class="l">Claudio/Rodolfo</td> <td>Inglês</td> <td class="k">Carla</td> <td>T.P.A</td> <td class="i">Oswaldo/Rodolfo</td>
+		
+	</tr>
+
+	<tr class="z">
+		<td colspan="11"> Intervalo</td>
+
+	</tr>
+	<tr>
+		<td> 13:30 às 14:20</td> <td> História </td> <td class="o"> Ana Carolina</td> <td> Física </td> <td class="g"> Luiz</td> <td> Design Digital </td> <td class="n"> Elis/Augusto</td> <td> Inglês </td> <td class="k"> Carla</td> <td> T.P.A</td> <td class="i"> Oswaldo/Rodolfo</td>	
+	</tr>
+	<tr>
+		<td>14:20 às 15:10</td><td>História</td> <td class="o"> Ana Carolina</td> <td>Biologia</td> <td class="m"> Júlio</td> <td>Design Digital</td> <td class="n"> Elis/Augusto</td> <td>Português</td> <td class="b"> Fidélis</td> <td>Química</td> <td class="j"> José Adriano</td> 
+	
+	</tr>
+	<tr>
+		<td>15:10 às 16:00</td> <td>Matemática</td> <td class="g">Luiz</td> <td>Biologia</td> <td class="m"> Júlio</td>  <td>Matemática</td> <td class="g">Luiz</td>  <td>Português</td> <td class="b">Fidélis</td>  <td>Química</td> <td class="j">José Adriano</td>  
+	
+	</tr>
+	</tr>
+        </table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+        <button type="button" class="btn btn-primary">ENTENDIDO</button>
+      </div>
+    </div>
+  </div>
+</div>
+					</div>
+					<div class="col-sm-2 offset-sm-1">
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop2" id="professores">
+  PROFESSORES
+</button>
+
+<!-- MANO, TO MORTO... -->
+<div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">PROFESSORES</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ol>
+			<li> Simone / Artes</li>
+			<li> Fidélis / Gramática, Redação, Literatura </li>
+			<li> Estér / Filosofia</li>
+			<li> Carla / Inglês</li>
+			<li> Thiago / Ed. Física</li>
+			<li> Elisângela / A.P.S, Design Digital, Banco de Dados</li>
+			<li> Claudio / Banco de Dados, P.W</li>
+			<li> Jussimar /A.P.S</li>
+			<li> Luiz / Matemática, Física</li>
+			<li> Wellington / Fundamentos da informática</li>
+			<li> Oswaldo / T.P.A</li>
+			<li> Rodolfo / P.W, T.P.A</li>
+			<li> Henrique / Geografia</li>
+			<li> Ana Caroline / História</li>
+			<li> Júlio / Biologia</li>
+			<li> Adriano / Química</li>
+		</ol>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+        <button type="button" class="btn btn-primary">ENTENDIDO</button>
+      </div>
+    </div>
+  </div>
+</div>
+					</div>
+					<div class="col-sm-2 offset-sm-1">
+						<button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop3" id="cardapio">
+  Matérias Técnicas
+</button>
+
+
+<div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">MATÉRIAS TÉCNICAS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table>
+        <caption>MATÉRIAS TÉCNICAS 1ºD.S</caption>
+        <tr>
+
+
+
+        </tr>
+        <table border="1">
+            <tr>
+                <td class="vazia"> MATÉRIAS TÉCNICAS</td>
+                <td class="andrey">Análise e Programação de Sistemas (A.P.S)</td>
+                <td class="bia">Banco de Dados (B.D)</td>
+                <td class="cris">Programação Web I (P.W)</td>
+                <td class="daniel">Design Digital (D.D)</td>
+                <td class="eliana">Fundamentos</td>
+                <td class="lele"> Técnicas de Programação e Asmoritmos (T.P.A)</td>
+
+
+            </tr>
+        </table>
+</table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+        <button type="button" class="btn btn-primary">ENTENDIDO</button>
+      </div>
+    </div>
+  </div>
+</div>
+					</div>
+						<div class="col-sm-2 offset-sm-1">
+							<button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop1" id="rematricula">
+ 						 	REMATRÍCULA
+							</button>
+								<div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ 									<div class="modal-dialog">
+  										<div class="modal-content">
+      										<div class="modal-header">
+    											<h5 class="modal-title" id="staticBackdropLabel"> FORA DO PRAZO</h5>
+       											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         										<span aria-hidden="true">&times;</span>
+       											</button>
+     										</div>
+     										<div class="modal-body">
+      											Prazo para rematrícula: 14/12/2020 a 18/12/2020
+      										</div>
+      										<div class="modal-footer">
+						        				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+					    	    				<button type="button" class="btn btn-primary">Entendi</button>
+					      					</div>
+					    				</div>
+									</div>
+								</div>
+						</div>
+					</div>
+			<div class="col-sm-4 offset-sm-3"><h1 id="headertxt"> DESENVOLVIMENTO DE SISTEMAS</h1></div>
+		</div>
+	</div>
+</div>
+<!-- Section Contact  -->
+<!-- alert para contatos -->
+<!--
+<section class="col-sm-4 offset-sm-4" id="contato">
+	<h2>Contato</h2>
+	<p>Tenha contato conosco!</p>
+	<div>
+		<img src="img/tel.png" alt="telefone">
+		<p><a href="tel:4199999999">(41)9999-9999</a></p>
+	</div>
+	<div>
+		<img src="img/mail.png" alt="email">
+		<p><a href="mailto:andreygouveia.05@gmail.com">
+			andreygouveia.05@gmail.com</a></p>
+		<img src="img/mail.png" alt="email">
+		<p><a href="mailto:cristhoferchow9@gmail.com">
+		cristhoferchow9@gmail.com</a></p>	
+	</div>
+</section>
+-->
+<!-- RODAPÉ DO SITE-->    
+<!-- btn contact -->
+<footer class="col-sm-4 offset-sm-4">
+	<p>Desenvolvido por Andrey Moura e Cristhofer Chow</p>
+	<button class ="btn btn-primary" onclick="contatoAndrey()" id="btncontact">Instagram Andrey</button>
+	<button class ="btn btn-primary" onclick="contatoCristhofer()" id="btncontact">Instagram Cristhofer</button>
+</footer>
+
+<!-- JAVA SCRIPT -->
+
+<script>
+	function contatoAndrey(){
+		if(confirm("Deseja ser redirecionado?")){
+			window.location.href="https://www.instagram.com/andrey_moura_gouvea/";
+
+		}
+	}
+	//email Cristhofer 
+	function contatoCristhofer(){
+		if(confirm("Deseja ser redirecionado?")){
+			window.location.href="https://www.instagram.com/cristhofer133/";
+		}	
+	}
+
+
+
+</script>
+
+<!-- Códigos Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
