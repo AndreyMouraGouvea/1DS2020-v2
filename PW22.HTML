@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <meta charset="utf-8">
 <head>
@@ -249,7 +249,61 @@
 
 		}
 			}			
-
+		/*edição andrey 16.11*/
+		#content-modal-materias{
+			width: 550px;
+			text-align: center;
+		}
+		#text-center-materias{
+			text-align: center;
+			margin: 0 auto;
+		} 
+		
+		@media screen and (max-width: 1200px){
+			#modal-content-horario{
+				position: relative;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				width: 900px;
+				pointer-events: auto;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid rgba(0,0,0,.2);
+				border-radius: .3rem;
+				outline: 0;
+				
+			}
+			#modal-body-conteudo{
+				position: relative;
+				-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+			}
+		}
+			@media screen and (max-width: 1000px){
+				#modal-body-conteudo{
+					width: 750px;
+ 					 margin: auto;		
+				}
+				#modal-content-horario{
+					width: 750px;
+ 					 margin: auto;		
+				}
+			}
+			/*teste
+			@media screen and (max-width: 1440px){
+				#headertitle{
+					display: flex;
+					align-items: center;
+					text-align: center;
+					text-decoration: none;
+					color: white;
+					flex-direction: row;
+					justify-content: center;
+				}
+			
+			}*/
 	</style>
 
 
@@ -267,14 +321,14 @@
 
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
-    <div class="modal-content">
+    <div class="modal-content"id="modal-content-horario">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">HORÁRIO DAS AULAS</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="modal-body-conteudo">
 <!-- mais 7 hrs... -->
         <table>
         	<h1><center>Desenvolvimento de Sistemas</center></h1>
@@ -395,7 +449,7 @@
 
 <div class="modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
-    <div class="modal-content">
+    <div class="modal-content" id="content-modal-materias">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">MATÉRIAS TÉCNICAS</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -404,12 +458,13 @@
       </div>
       <div class="modal-body">
         <table>
-        <caption>MATÉRIAS TÉCNICAS 1ºD.S</caption>
+        <caption id="text-center-materias">MATÉRIAS TÉCNICAS 1ºD.S</caption>
         <tr>
 
 
 
-        </tr>
+		</tr>
+		<!-- algoritmos arrumado **-->
         <table border="1">
             <tr>
                 <td class="vazia"> MATÉRIAS TÉCNICAS</td>
@@ -418,7 +473,7 @@
                 <td class="cris">Programação Web I (P.W)</td>
                 <td class="daniel">Design Digital (D.D)</td>
                 <td class="eliana">Fundamentos</td>
-                <td class="lele"> Técnicas de Programação e Asmoritmos (T.P.A)</td>
+                <td class="lele"> Técnicas de Programação e Algoritmos (T.P.A)</td>
 
 
             </tr>
@@ -459,7 +514,8 @@
 								</div>
 						</div>
 					</div>
-			<div class="col-sm-4 offset-sm-3"><h1 id="headertxt"> DESENVOLVIMENTO DE SISTEMAS</h1></div>
+			<div class="col-sm-4 offset-sm-3">
+				<h1 id="headertxt" id="headertitle"> DESENVOLVIMENTO DE SISTEMAS</h1></div>
 		</div>
 	</div>
 </div>
